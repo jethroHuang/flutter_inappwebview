@@ -5,7 +5,10 @@
     </style>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light">
-
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <!--Android 5.x needs to set the color to transparent, otherwise the navigation bar will present the system's default light gray-->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
     </style>
 
     <style name="ThemeTransparent" parent="android:Theme">
